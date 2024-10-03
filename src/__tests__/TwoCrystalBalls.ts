@@ -7,8 +7,7 @@ test("two crystal balls", function () {
     for (let i = idx; i < 10000; ++i) {
         data[i] = true;
     }
-
+    // [false , false, false . true , true] => when true =>
     expect(two_crystal_balls(data)).toEqual(idx);
     expect(two_crystal_balls(new Array(821).fill(false))).toEqual(-1);
 });
-
