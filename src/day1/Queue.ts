@@ -5,8 +5,8 @@ type Node<T> = {
 };
 export default class Queue<T> {
     public length: number;
-    public head?: Node<T>;
-    public tail?: Node<T>;
+    private head?: Node<T>;
+    private tail?: Node<T>;
 
     constructor() {
         this.head = this.tail = undefined;
